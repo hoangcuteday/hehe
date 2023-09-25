@@ -88,15 +88,5 @@ public class Student {
 
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "middleName='" + middleName + '\'' +
-                ", address='" + address + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", studentCode='" + studentCode + '\'' +
-                ", subjectList=" + subjectList +
-                '}';
-    }
+
 }

@@ -37,6 +37,18 @@ public class Subject {
         return  this.totalScore >= 4.0;
     }
 
+    public void display(){
+        System.out.println("----------------- info subject ------------------");
+        System.out.println("courseCode: " + courseCode);
+        System.out.println("courseName: " + courseName);
+        System.out.println("numberOfPeriods: " + numberOfPeriods);
+        System.out.println("numberOfTests: " + numberOfTests);
+        System.out.println("instructor: " + instructor);
+        System.out.println("isPass: " + (pass ? "YES" : "NO"));
+        System.out.println("totalScore: " + totalScore);
+
+    }
+
     public String getCourseCode() {
         return courseCode;
     }
@@ -85,17 +97,5 @@ public class Subject {
         this.testScore = testScore;
     }
 
-    @Override
-    public String toString() {
-        return "Subject{" +
-                "courseCode='" + courseCode + '\'' +
-                ", courseName='" + courseName + '\'' +
-                ", numberOfPeriods=" + numberOfPeriods +
-                ", numberOfTests=" + numberOfTests +
-                ", instructor='" + instructor + '\'' +
-                ", pass=" + pass +
-                ", totalScore=" + totalScore +
-                ", testScore=" + Arrays.toString(testScore) +
-                '}';
-    }
+
 }
